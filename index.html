@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <title>Git Search</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="leftCol">
+        <div class="colContainer">
+          <h1 class="pageTitle">Git Search</h1>
+          <h2 class="subtitle">
+            Encontre e se conecte com profissionais de forma rápida e fácil
+          </h2>
+          <div class="divRecentSearch">
+            <p class="recentText">Achados recentemente:</p>
+            <ul class="ulRecentProfiles"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="rightCol">
+        <div class="colRightContainer">
+          <h2 class="subtitle">Procurar por um usuário</h2>
+          <form class="searchForm">
+            <label for="inputProfile">Usuário GitHub</label>
+            <input
+              id="inputUser"
+              type="text"
+              name="inputProfile"
+              onchange="toggleButton() "
+              placeholder="Digite um usuário do GitHub aqui..."
+            />
+            <div id="userError" class="error">Usuário não encontrado</div>
+            <button
+              id="send"
+              class="btnSubmit"
+              type="submit"
+              disabled
+              value="Enviar"
+            >
+              Ver perfil do GitHub
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./pages/home/index.js"></script>
+  </body>
+</html>
