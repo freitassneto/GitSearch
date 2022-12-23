@@ -1,0 +1,140 @@
+.container {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+  background-color: var(--color-grey-2);
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.813rem;
+}
+
+.headerLeftCol {
+  display: flex;
+  align-items: center;
+}
+
+.profileWrapper {
+  padding-right: 1.25rem;
+}
+
+.profileWrapper img {
+  height: 5rem;
+  border-radius: 100%;
+  border: 2px solid var(--color-brand-2);
+}
+
+.nameOccupation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.devName {
+  font-weight: var(--weight-0);
+  font-size: var(--title-3);
+  color: var(--color-white);
+}
+
+.devOccupation {
+  font-weight: var(--weight-2);
+  font-size: var(--text-1);
+  color: var(--color-grey-8);
+}
+
+.headerRightCol {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.headerBtns {
+  display: flex;
+  align-items: center;
+  height: 2.375rem;
+  background-color: var(--color-grey-7);
+  padding: 19px 25px;
+  border-radius: var(--radius-1);
+  font-weight: var(--weight-1);
+  font-size: var(--text-2);
+  color: var(--color-white);
+  border: none;
+  transition: ease 0.3s;
+}
+
+.headerBtns:hover {
+  background-color: var(--color-brand-2);
+  transition: ease 0.3s;
+}
+
+.reposList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.375rem;
+}
+
+.repoCard {
+  background-color: var(--color-grey-2);
+  width: 48%;
+  border: 2px solid var(--color-grey-3);
+  border-radius: var(--radius-1);
+  transition: ease 0.2s;
+}
+
+.repoCard:hover {
+  background-color: var(--color-grey-1);
+  width: 48%;
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-1);
+  transition: ease 0.2s;
+}
+
+.cardContainer {
+  padding: 2.5rem 1.688rem;
+}
+
+.repoTitle {
+  font-weight: var(--weight-2);
+  font-size: var(--title-2);
+  color: var(--color-white);
+  margin-bottom: 1.313rem;
+}
+
+.repoDescription {
+  font-weight: var(--weight-3);
+  font-size: var(--text-2);
+  color: var(--color-grey-8);
+  line-height: 150%;
+  margin-bottom: 1.313rem;
+}
+
+.repoBtns {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.repoBtn {
+  display: flex;
+  align-items: center;
+  height: 1.75rem;
+  border-radius: var(--radius-2);
+  padding: 0 0.5rem;
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+  font-weight: var(--weight-2);
+  font-size: var(--text-2);
+  color: var(--color-white);
+  transition: ease 0.2s;
+}
+
+.repoBtn:hover {
+  background-color: var(--color-brand-2);
+  border: var(--color-brand-2);
+  transition: ease 0.3s;
+}
